@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description: 'Site for the Endeavour PTSA Reflections 2023 - 2024 program.',
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface IRootLayout {
   children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
 }
+
+const RootLayout = ({ children }: IRootLayout) => (
+  <html lang="en" className="bg-slate-50">
+    <body className={inter.className}>{children}</body>
+  </html>
+);
+
+export default RootLayout;
