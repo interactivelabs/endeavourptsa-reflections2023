@@ -5,9 +5,9 @@ type ButtonProps =
   | React.ComponentPropsWithoutRef<typeof Link>
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined });
 
-export function Button({ className, ...props }: ButtonProps) {
+const Button = ({ className, ...props }: ButtonProps) => {
   className = clsx(
-    'inline-flex justify-center rounded-2xl bg-ptsa-red p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-ptsa-red active:text-white/70',
+    'inline-flex justify-center rounded-2xl bg-ptsa-red-900 p-4 text-base font-semibold text-white hover:bg-ptsa-red-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:bg-ptsa-red-900 active:text-white/70',
     className,
   );
 
@@ -16,4 +16,6 @@ export function Button({ className, ...props }: ButtonProps) {
   ) : (
     <Link className={className} {...props} />
   );
-}
+};
+
+export default Button;

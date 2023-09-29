@@ -1,3 +1,4 @@
+import Footer from '@/components/sections/Footer';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { DM_Sans, Inter } from 'next/font/google';
@@ -34,8 +35,9 @@ const RootLayout = ({ children }: IRootLayout) => (
       dmSans.variable,
     )}
   >
-    <body className="flex min-h-full">
+    <body className="min-h-full">
       <div className="flex w-full flex-col">{children}</div>
+      <Footer />
     </body>
   </html>
 );

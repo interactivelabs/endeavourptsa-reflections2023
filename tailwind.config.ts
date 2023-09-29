@@ -25,8 +25,28 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'ptsa-red': '#962828',
-        'ptsa-dark-blue': '#050041',
+        'ptsa-blue': {
+          100: '#ebf1ff',
+          200: '#d5e2ff',
+          300: '#c0d0ff',
+          400: '#abbeff',
+          500: '#6f81ff',
+          600: '#353bfa',
+          700: '#1812e2',
+          800: '#090278',
+          900: '#050041',
+        },
+        'ptsa-red': {
+          100: '#ffeae6',
+          200: '#ffa79f',
+          300: '#ffa79f',
+          400: '#ff837d',
+          500: '#fa6562',
+          600: '#ee4f4e',
+          700: '#db3f3f',
+          800: '#bd3333',
+          900: '#962828',
+        },
       },
       borderRadius: {
         '4xl': '2rem',
