@@ -48,6 +48,9 @@ const config: Config = {
           900: '#962828',
         },
       },
+      backgroundImage: {
+        'category-icons': "url('/images/r-category-icons.webp')",
+      },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem',

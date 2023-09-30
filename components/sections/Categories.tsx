@@ -64,6 +64,7 @@ const actions = [
 export default function Categories() {
   return (
     <div className="mt-14">
+      <div className="h-16 w-16 bg-category-icons"></div>
       <div className="divide-y overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
         {actions.map((action, actionIdx) => (
           <div
