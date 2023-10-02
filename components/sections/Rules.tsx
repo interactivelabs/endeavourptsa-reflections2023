@@ -12,9 +12,14 @@ const Rules = () => (
         <Link
           href="https://www.wastatepta.org/events-programs/reflections"
           className="mt-4 inline-block font-display text-2xl tracking-tight text-ptsa-blue-800"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           Rules and more information can be found on the{' '}
-          <span className="underline">WA State Reflections</span> website.
+          <span className="underline">
+            WA State Reflections parent resources
+          </span>{' '}
+          website.
         </Link>
         <Categories />
       </div>

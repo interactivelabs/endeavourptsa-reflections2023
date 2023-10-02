@@ -25,6 +25,7 @@ const Information = () => (
             <Button
               href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections.docx"
               target="_blank"
+              rel="noopener noreferrer"
               className="mx-4"
             >
               Student Entry Packet{' '}
@@ -37,6 +38,7 @@ const Information = () => (
             <Link
               href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections_es.docx"
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-block text-ptsa-blue-800 underline"
             >
               En Español
@@ -46,6 +48,7 @@ const Information = () => (
             <Button
               href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="mx-4"
             >
               Student Entry Packet{' '}
@@ -58,6 +61,7 @@ const Information = () => (
             <Link
               href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections_es.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-block text-ptsa-blue-800 underline"
             >
               En Español

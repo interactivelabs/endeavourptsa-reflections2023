@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { DM_Sans, Inter } from 'next/font/google';
 import './globals.css';
+import Header from '@/components/sections/Header';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ const RootLayout = ({ children }: IRootLayout) => (
     )}
   >
     <body className="min-h-full">
+      <Header />
       <div className="flex w-full flex-col">{children}</div>
       <Footer />
     </body>
