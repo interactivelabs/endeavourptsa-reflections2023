@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import reflectionBanner from '../../public/images/reflections-23-24.webp';
-import Container from '../Container';
+import Container from '../UI/Container';
 
 const BannerImage = () => (
   <section id="banner-image" className="mb-28">

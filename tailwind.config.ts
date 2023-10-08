@@ -1,4 +1,5 @@
 import headlessuiPlugin from '@headlessui/tailwindcss';
+import forms from '@tailwindcss/forms';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -64,7 +65,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [headlessuiPlugin],
+  plugins: [headlessuiPlugin, forms],
 };
 
 export default config;

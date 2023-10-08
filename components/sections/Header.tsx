@@ -3,6 +3,7 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { PlusIcon } from '@heroicons/react/20/solid';
 import {
+  ArrowRightIcon,
   ArrowUpOnSquareIcon,
   Bars3Icon,
   BellIcon,
@@ -12,7 +13,7 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import ptsaLogo from '../../public/images/EndeavourPTSALogo.jpg';
-import Button from '../Button';
+import Button from '../UI/Button';
 
 export default function Header() {
   const linkStyles =
@@ -35,12 +36,14 @@ export default function Header() {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex flex-shrink-0 items-center py-2">
-                  <Image
-                    src={ptsaLogo}
-                    alt="Endeavour Elementary PTSA logo"
-                    className="h-full w-auto"
-                  />
+                <div className="ml-4 flex items-center py-2">
+                  <Link href="/" className="h-full">
+                    <Image
+                      src={ptsaLogo}
+                      alt="Endeavour Elementary PTSA logo"
+                      className="h-full w-auto"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   <Link
@@ -63,14 +66,12 @@ export default function Header() {
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <Button className="mr-4" href="/upload">
-                    Upload
-                    <ArrowUpOnSquareIcon className="ml-2 h-6 w-6" />
-                  </Button>
-                </div>
-              </div>
+              <Link
+                href="/upload"
+                className="mt-4 inline-block whitespace-nowrap font-display text-base tracking-tight text-ptsa-blue-800 underline"
+              >
+                Upload <ArrowRightIcon className="inline h-4 w-4" />
+              </Link>
             </div>
           </div>
 

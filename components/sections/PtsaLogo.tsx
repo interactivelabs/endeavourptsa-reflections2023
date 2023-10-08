@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ptsaLogo from '../../public/images/EndeavourPTSALogo.jpg';
-import Container from '../Container';
+import Container from '../UI/Container';
 
 const PtsaLogo = () => (
   <section id="ptsa-logo" className="my-28">

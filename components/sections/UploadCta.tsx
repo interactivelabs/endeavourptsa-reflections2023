@@ -1,5 +1,5 @@
-import Button from '@/components/Button';
-import Container from '@/components/Container';
+import Button from '@/components/UI/Button';
+import Container from '@/components/UI/Container';
 import { ArrowUpOnSquareIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 

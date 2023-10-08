@@ -1,4 +1,4 @@
-import Container from '../Container';
+import Container from '../UI/Container';
 
 const BannerVideo = () => (
   <section id="banner-video" className="my-28">

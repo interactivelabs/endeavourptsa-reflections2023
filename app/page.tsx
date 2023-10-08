@@ -1,10 +1,10 @@
-import Container from '@/components/Container';
 import BannerImage from '@/components/sections/BannerImage';
 import BannerVideo from '@/components/sections/BannerVideo';
 import Information from '@/components/sections/Information';
 import PtsaLogo from '@/components/sections/PtsaLogo';
 import Rules from '@/components/sections/Rules';
 import UploadCta from '@/components/sections/UploadCta';
+import Container from '@/components/UI/Container';
 
 const Home = () => (
   <main className="flex-auto">

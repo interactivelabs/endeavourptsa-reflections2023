@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Button from '../Button';
-import Container from '../Container';
 import PDFIcon from '../Icons/PDFIcon';
 import WordIcon from '../Icons/WordIcon';
+import Button from '../UI/Button';
+import Container from '../UI/Container';
 
 const Information = () => (
   <section id="student-entry-packet" className="my-28">
