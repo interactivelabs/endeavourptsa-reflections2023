@@ -1,3 +1,5 @@
+'use client';
+
 import { PhotoIcon } from '@heroicons/react/24/outline';
 import React, {
   ForwardRefExoticComponent,
@@ -6,8 +8,8 @@ import React, {
   useEffect,
   useState,
 } from 'react';
-import { Accept, useDropzone } from 'react-dropzone';
-import {
+import { useDropzone } from 'react-dropzone/dist/es/index';
+import type {
   ControllerFieldState,
   ControllerRenderProps,
   FieldValues,
@@ -23,7 +25,7 @@ interface IDropzoneFileInput<
   TFieldValues extends FieldValues,
   TPath extends Path<TFieldValues>,
 > {
-  accept?: Accept;
+  accept?: any;
   CustomIcon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
   error?: string;
   field: ControllerRenderProps<TFieldValues, TPath>;
@@ -39,7 +41,6 @@ const DropzoneFileInput = <
   field,
   fieldState,
   error = '',
-  multiple = false,
   accept,
   CustomIcon,
   maxSize,
@@ -86,7 +87,6 @@ const DropzoneFileInput = <
 
   const { fileRejections, getRootProps, getInputProps, isDragActive } =
     useDropzone({
-      multiple,
       onDrop,
       accept,
       validator: maxSize ? sizeValidator : undefined,
@@ -110,7 +110,7 @@ const DropzoneFileInput = <
     );
   });
 
-  const hideAddFiles = !multiple && files.length > 0;
+  const hideAddFiles = files.length > 0;
   return (
     <>
       {!hideAddFiles && (
