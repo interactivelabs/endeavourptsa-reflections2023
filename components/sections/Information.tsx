@@ -23,7 +23,7 @@ const Information = () => (
         <div className="mt-8 flex justify-around">
           <div className="flex flex-col">
             <Button
-              href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections.docx"
+              href="https://endeavourptsa.org/Doc/Reflections-2023-2024/23.24-WSPTA-student-entry-packet-reflections.docx"
               target="_blank"
               rel="noopener noreferrer"
               className="mx-4"
@@ -36,7 +36,7 @@ const Information = () => (
               <span>.docx</span>
             </Button>
             <Link
-              href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections_es.docx"
+              href="https://endeavourptsa.org/Doc/Reflections-2023-2024/23.24-WSPTA-student-entry-packet-reflections_.docx"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block text-ptsa-blue-800 underline"
@@ -46,7 +46,7 @@ const Information = () => (
           </div>
           <div className="flex flex-col">
             <Button
-              href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections.pdf"
+              href="https://endeavourptsa.org/Doc/Reflections-2023-2024/23.24-WSPTA-student-entry-packet-reflections.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="mx-4"
@@ -59,7 +59,7 @@ const Information = () => (
               <span>.pdf</span>
             </Button>
             <Link
-              href="https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/docs-provided/23.24-WSPTA-student-entry-packet-reflections_es.pdf"
+              href="https://endeavourptsa.org/Doc/Reflections-2023-2024/23.24-WSPTA-student-entry-packet-reflections_.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block text-ptsa-blue-800 underline"
