@@ -39,10 +39,9 @@ export default function getUploadFormOnSubmit({
       setProgress: Dispatch<SetStateAction<number>>,
     ) {
       const uploadPromise = new Promise((resolve, reject) => {
-        const formData = new FormData();
-        formData.append('file', file);
         const request = new XMLHttpRequest();
         request.open('PUT', url);
+        request.setRequestHeader('Content-Type', file.type);
         // upload progress event
         request.upload.addEventListener('progress', function (e) {
           const progress = Math.round((e.loaded / e.total) * 100);
@@ -54,7 +53,7 @@ export default function getUploadFormOnSubmit({
             resolve({ success: true });
           } else reject(new Error(`Upload failed ${file.name}`));
         });
-        request.send(formData);
+        request.send(file);
       });
       return uploadPromise;
     }

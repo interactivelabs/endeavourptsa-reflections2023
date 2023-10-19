@@ -253,15 +253,15 @@ const UploadForm = () => {
             <div className="mt-6 flex items-center justify-end gap-x-6">
               {!!isCompleted && (
                 <SuccessAlert
-                  message="Successfully uploaded"
                   className="flex-1"
+                  message="Successfully uploaded"
                   onDismiss={() => setIsCompleted(false)}
                 />
               )}
               {!!isError && (
                 <ErrorAlert
-                  message="Successfully uploaded"
                   className="flex-1"
+                  message="There was an error uploading your artwork. Please try again."
                   onDismiss={() => setIsError(false)}
                 />
               )}
