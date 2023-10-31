@@ -4,5 +4,5 @@ export default function getServersUrl() {
     return `${protocol}//${hostname}:${port}`;
   }
   const baseUrl = process.env.VERCEL_URL;
-  return !!baseUrl ? `https://${baseUrl}/` : 'http://localhost:3000';
+  return !!baseUrl ? `https://${baseUrl}` : 'http://localhost:3000';
 }
