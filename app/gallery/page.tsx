@@ -1,5 +1,4 @@
-import ImageGallery from '@/components/sections/ImageGallery';
-import ImageModal from '@/components/UI/ImageModal/ImageModal';
+import ArtGallery from '@/components/sections/ArtGallery';
 import getServersUrl from '@/lib/getServerUrl';
 import { ListObjectsV2CommandOutput } from '@aws-sdk/client-s3';
 
@@ -17,7 +16,7 @@ const GalleryPage = async () => {
   if (!data) return null;
   return (
     <main className="p-8">
-      <ImageGallery images={data} />
+      <ArtGallery images={data} />
     </main>
   );
 };
