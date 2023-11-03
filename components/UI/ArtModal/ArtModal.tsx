@@ -1,7 +1,7 @@
 'use client';
 
 import { Dialog, Transition } from '@headlessui/react';
-import { Dispatch, Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import CloseButton from '../CloseButton';
 
 export type ArtType = 'image' | 'video' | 'document' | 'audio';
