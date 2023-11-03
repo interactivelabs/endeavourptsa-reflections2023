@@ -3,6 +3,8 @@ export default function getServersUrl() {
     const { protocol, hostname, port } = window.location;
     return `${protocol}//${hostname}:${port}`;
   }
-  const baseUrl = process.env.VERCEL_URL;
-  return !!baseUrl ? `https://${baseUrl}` : 'http://localhost:3000';
+
+  return !!process.env.VERCEL
+    ? `https://endeavourptsa-reflections2023.vercel.app`
+    : 'http://localhost:3000';
 }
