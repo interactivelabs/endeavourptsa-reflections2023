@@ -1,6 +1,6 @@
 'use client';
 
-import { _Object } from '@aws-sdk/client-s3';
+import type { _Object } from '@aws-sdk/client-s3';
 import Link from 'next/link';
 import { useState } from 'react';
 import MusicIcon from '../Icons/MusicIcon';
