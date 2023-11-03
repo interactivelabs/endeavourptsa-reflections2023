@@ -1,3 +1,5 @@
+'use server';
+
 import ArtGallery from '@/components/sections/ArtGallery';
 import getServersUrl from '@/lib/getServerUrl';
 import { ListObjectsV2CommandOutput } from '@aws-sdk/client-s3';
