@@ -1,8 +1,8 @@
 'use server';
 
-import { ListObjectsV2CommandOutput } from '@/@types/aws';
 import ArtGallery from '@/components/sections/ArtGallery';
 import getServersUrl from '@/lib/getServerUrl';
+import type { ListObjectsV2CommandOutput } from '@aws-sdk/client-s3';
 
 const getData = async () => {
   const serverUrl = getServersUrl();
