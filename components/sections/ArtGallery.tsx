@@ -82,7 +82,10 @@ const ArtGallery = ({ images }: IArtGallery) => {
                             Audio file - Click to listen
                           </div>
                         </div>
-                        <audio controls className="h-auto max-w-full">
+                        <audio
+                          controls
+                          className="h-auto min-h-[40px] max-w-full"
+                        >
                           <source
                             src={`https://endeavourptsa-reflections2023.s3.us-west-2.amazonaws.com/${image.Key}`}
                             type={getMimeType(image.Key)}
