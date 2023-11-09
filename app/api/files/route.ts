@@ -11,6 +11,7 @@ export async function GET() {
   const params = {
     Bucket: bucket,
     Prefix: 'uploads/',
+    MaxKeys: 1000,
   };
 
   const command = new ListObjectsV2Command(params);
